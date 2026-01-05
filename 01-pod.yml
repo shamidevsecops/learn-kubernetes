@@ -9,27 +9,27 @@ spec:
       ports:
         - containerPort: 80
 ---
-apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx-02
-spec:
-  containers:
-    - name: nginx
-      image: nginx:1.14.2
-      ports:
-        - containerPort: 80
----
-apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx-03
-spec:
-  containers:
-    - name: nginx
-      image: nginx:1.14.2
-      ports:
-        - containerPort: 80
-    - name: bare
-      image: redhat/ubi9
+#apiVersion: v1
+#kind: Pod
+#metadata:
+#  name: nginx-02
+#spec:
+#  containers:
+#    - name: nginx
+#      image: nginx:1.14.2
+#      ports:
+#        - containerPort: 80
+#---
+#apiVersion: v1
+#kind: Pod
+#metadata:
+#  name: nginx-03
+#spec:
+#  containers:
+#    - name: nginx
+#      image: nginx:1.14.2
+#      ports:
+#        - containerPort: 80
+#    - name: bare
+#      image: redhat/ubi9
 
